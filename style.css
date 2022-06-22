@@ -40,26 +40,9 @@ body {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(100, 61, 136);
 }
-.personal-details select {
-    width: 100%;
-    border: 0 solid rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-.personal-details input {
-    width: 100%;
-    border: 0 solid rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
+
 legend {
     font-size: 1.5em;
     font-weight: bold;
@@ -84,9 +67,6 @@ textarea {
 }
 #frameworks {
     margin-bottom: 20px;
-}
-.checkbox {
-
 }
 button {
     --glow-color: rgb(217, 176, 255);
