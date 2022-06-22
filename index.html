@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-header">
+    <header class="container-header">
         <h1>Developer Registration</h1>
         <h3>Fill in your information</h3>
-    </div>
+    </header>
 <!-- personal details -->
+<form action="index.html" method="get">
 <div class="personal-details">
     <fieldset>
     <legend> Personal Details </legend>
     <label for="name">
         Name:
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" placeholder="Name" required>
     </label>
     <label for="Last name">
         Last name:
-        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
     </label><br>
     <label for="email">
         Email:
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" placeholder="Email" required>
     </label>
     <label for="nickname">
         Nickname:
-        <input type="text" name="nickname" id="nickname">
+        <input type="text" name="nickname" id="nickname" placeholder="Nickname" required>
     </label>
     </fieldset>
 </div>    
@@ -63,7 +64,7 @@
             <label><input class="checkbox" type="checkbox">Python</label>
             <label><input class="checkbox" type="checkbox">Ruby</label>
             <label><input class="checkbox" type="checkbox">Ruby</label>
-            ><label><input class="checkbox" type="checkbox">C++</label>
+            <label><input class="checkbox" type="checkbox">C++</label>
         </label>
     </fieldset>
     <fieldset>
@@ -81,7 +82,12 @@
         <br>
         <br>
         <button>Send</button>
-
+    </form>
+        <!-- rodapé -->
+        <footer class="container-footer">
+            <p>&copy; Copyright 2018 - All rights reserved</p>
+            <p>Developer by Max Gabriel</p>
+        </footer>
 
 
 
