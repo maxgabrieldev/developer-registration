@@ -6,33 +6,98 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-display: swap;
     line-height: 1.5;
     color: rgb(0, 0, 0);
+    background: rgb(168,121,255);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%, rgba(147,93,255,1) 47%, rgba(126,61,255,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%,rgba(147,93,255,1) 47%,rgba(126,61,255,1) 100%);
+    background: radial-gradient(ellipse at center,  rgba(168,121,255,1) 0%,rgba(147,93,255,1) 47%,rgba(126,61,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a879ff', endColorstr='#7e3dff',GradientType=1 );
+    
+          
 }
+    
 .container-header {
     width: 100%;
     height: 100px;
     padding: 20px;
     margin-bottom: 50px;
-    background-color: aqua;
 }
-select {
-    width: 100px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 0px 10px;
-    font-size: 14px;
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
     color: rgb(0, 0, 0);
 }
-.A {
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    display: block;
+
+fieldset {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 25px;
+    margin-bottom: 20px;
 }
-.B {
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    display: block;
+
+textarea {
+    width: 50%;
+
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    resize: none;
 }
+#occupation-level {
+    margin-bottom: 20px;
+}
+#frameworks {
+    margin-bottom: 20px;
+}
+.checkbox {
+
+}
+button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
