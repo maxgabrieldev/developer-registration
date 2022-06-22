@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="container-header">
-        <h1>Registration</h1>
+        <h1>Developer Registration</h1>
         <h3>Fill in your information</h3>
     </div>
 <!-- personal details -->
-    <h2>Personal Details</h2>
+<div class="personal-details">
+    <fieldset>
+    <legend> Personal Details </legend>
     <label for="name">
         Name:
         <input type="text" name="name" id="name">
@@ -30,9 +32,11 @@
         Nickname:
         <input type="text" name="nickname" id="nickname">
     </label>
+    </fieldset>
+</div>    
 <!-- professional details -->
-<h2>Professional details</h2>
-    <div class="A">
+    <fieldset>
+        <legend>Professional Details</legend>
         <label id="occupation-level">
             Occupation:
             <select>
@@ -47,27 +51,36 @@
                 <option value="Junior">Junior</option>
                 <option value="Mid-Level">Mid-Level</option>
                 <option value="Senior">Senior</option>
+            </select>
         </label>
-    </div>
-<br>
-    <div class="B">
+        <br>
         <label id="frameworks">
-            Framkewors:
-            <input type="checkbox">HTML
-            <input type="checkbox">CSS
-            <input type="checkbox">JavaScript
-            <input type="checkbox">PHP
-            <input type="checkbox">Python
-            <input type="checkbox">Ruby
-            <input type="checkbox">C#
-            <input type="checkbox">C++
+            Frameworks:
+            <label><input class="checkbox" type="checkbox">HTML</label>
+            <label><input class="checkbox" type="checkbox">CSS</label>
+            <label><input class="checkbox" type="checkbox">JavaScript</label>
+            <label><input class="checkbox" type="checkbox">PHP</label>
+            <label><input class="checkbox" type="checkbox">Python</label>
+            <label><input class="checkbox" type="checkbox">Ruby</label>
+            <label><input class="checkbox" type="checkbox">Ruby</label>
+            ><label><input class="checkbox" type="checkbox">C++</label>
         </label>
-    </div>
-    <label>
-        <input type="checkbox" name="terms" id="terms">
-        I accept the terms and conditions
-
-
+    </fieldset>
+    <fieldset>
+        <legend>Other Details</legend>
+        <label id="about-you">
+            About you: <br>
+            <textarea name="about-you" id="about-you" cols="50" rows="5"></textarea>
+        </label>
+    </fieldset>
+        <label>
+            <input type="checkbox" name="terms" id="terms">
+            I accept the terms and conditions
+        </label>
+        <br>
+        <br>
+        <br>
+        <button>Send</button>
 
 
 
