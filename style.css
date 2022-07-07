@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
 * {
     box-sizing: border-box;
-    text-align: center;
-    margin: 0;
+    /* text-align: center; */
+    margin: 15px;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-family: 'Gulzar', serif;
+    font-size: 16px;
     font-display: swap;
-    line-height: 1.5;
+    line-height: 1.1;
     color: rgb(0, 0, 0);
     background: rgb(168,121,255);
     background: -moz-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%, rgba(147,93,255,1) 47%, rgba(126,61,255,1) 100%);
@@ -27,15 +28,15 @@ body {
 }
 
 .personal-details {
-    width: 100%;
-    height: 100px;
+    width: 50%;
     margin-bottom: 50px;
     border: 0 solid rgba(0, 0, 0, 0.2);
     display:contents;
 }
 .personal-details input {
-    width: 100%;
-    padding-left: 50px;
+    width: 30%;
+    margin-bottom: 10px;
+    display: block;
     border: 0 solid rgba(0, 0, 0, 0.2);
     padding: 10px;
     font-size: 14px;
@@ -52,13 +53,13 @@ legend {
 
 fieldset {
     border: 1px solid rgb(0, 0, 0);
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 20px;
+    
 }
 
 textarea {
     width: 50%;
-
     padding: 10px;
     border: 1px solid rgb(0, 0, 0);
     resize: none;
