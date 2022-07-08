@@ -9,12 +9,12 @@ body {
     font-size: 16px;
     font-display: swap;
     line-height: 1.1;
-    color: rgb(0, 0, 0);
-    background: rgb(168,121,255);
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%, rgba(147,93,255,1) 47%, rgba(126,61,255,1) 100%);
+    color: rgb(196, 196, 196);
+    background: #202124
+    /* background: -moz-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%, rgba(147,93,255,1) 47%, rgba(126,61,255,1) 100%);
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(168,121,255,1) 0%,rgba(147,93,255,1) 47%,rgba(126,61,255,1) 100%);
     background: radial-gradient(ellipse at center,  rgba(168,121,255,1) 0%,rgba(147,93,255,1) 47%,rgba(126,61,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a879ff', endColorstr='#7e3dff',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a879ff', endColorstr='#7e3dff',GradientType=1 ); */
     
           
 }
@@ -25,6 +25,7 @@ body {
     padding: 20px;
     margin-bottom: 50px;
     border: 0 solid rgba(0, 0, 0, 0.2);
+    color: rgba(191, 123, 255, 0.781);
 }
 
 .personal-details {
@@ -34,7 +35,7 @@ body {
     display:contents;
 }
 .personal-details input {
-    width: 30%;
+    width: 20%;
     margin-bottom: 10px;
     display: block;
     border: 0 solid rgba(0, 0, 0, 0.2);
@@ -42,17 +43,17 @@ body {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: rgb(100, 61, 136);
+    color: rgba(191, 123, 255, 0.781);
 }
 
 legend {
     font-size: 1.5em;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgba(191, 123, 255, 0.781);
 }
 
 fieldset {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(191, 123, 255, 0.781);
     padding: 20px;
     margin-bottom: 20px;
     
@@ -70,7 +71,11 @@ textarea {
 #frameworks {
     margin-bottom: 20px;
 }
+.terms {
+    margin-left: 41%;
+}
 button {
+    margin-left: 46%;
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
@@ -89,6 +94,7 @@ button {
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+    cursor: pointer;
 }
    
 button::after {
@@ -125,8 +131,9 @@ button:active {
     padding: 20px;
     margin-top: 50px;
     border: 0 solid rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(196, 196, 196)
 }
