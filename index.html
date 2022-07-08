@@ -15,27 +15,30 @@
 <!-- personal details -->
 <form action="index.html" method="get">
 <div class="personal-details">
+    <div class="input-group">
     <fieldset>
     <legend> Personal Details </legend>
-    <label for="name">
+    <label class="user-label" for="name">
         Name:
         <input type="text" name="name" id="name" placeholder="Name" required>
     </label><br>
-    <label for="Last name">
+    <label class="user-label" for="Last name">
         Last name:
         <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
     </label><br>
-    <label for="email">
+    <label class="user-label" for="email">
         Email:
         <input type="email" name="email" id="email" placeholder="Email" required>
     </label><br>
-    <label for="nickname">
+    <label class="user-label" for="nickname">
         Nickname:
         <input type="text" name="nickname" id="nickname" placeholder="Nickname" required>
     </label>
     </fieldset>
+    </div>
 </div>    
 <!-- professional details -->
+<div>
     <fieldset>
         <legend>Professional Details</legend>
         <label id="occupation-level">
@@ -67,6 +70,8 @@
             <label><input class="checkbox" type="checkbox">C++</label>
         </label>
     </fieldset>
+</div>
+<div>
     <fieldset>
         <legend>Other Details</legend>
         <label id="about-you">
@@ -74,11 +79,11 @@
             <textarea name="about-you" id="about-you" cols="50" rows="5"></textarea>
         </label>
     </fieldset>
-        <label>
+</div>
+        <label class="terms">
             <input type="checkbox" name="terms" id="terms">
             I accept the terms and conditions
         </label>
-        <br>
         <br>
         <br>
         <button>Send</button>
